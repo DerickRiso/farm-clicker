@@ -1,0 +1,21 @@
+body {
+    background-image: url(../img/background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#click {
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.274);
+    border-radius: 100px;
+}
+
+#click img{
+    height: 400px;
+    width: auto;
+}
+
+#click img:active {
+    transform: scale(1.1);
+}
