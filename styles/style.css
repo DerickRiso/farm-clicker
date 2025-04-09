@@ -7,8 +7,9 @@ body {
 
 #click {
     display: inline-block;
-    background-color: rgba(0, 0, 0, 0.274);
+    background-color: rgba(0, 0, 0, 0.555);
     border-radius: 100px;
+    border: solid 2px rgba(0, 0, 0, 0.678)
 }
 
 #click img{
