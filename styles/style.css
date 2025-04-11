@@ -7,6 +7,11 @@ body {
 
 #click {
     display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translateY(-50%);
+    
     background-color: rgba(0, 0, 0, 0.555);
     border-radius: 100px;
     border: solid 2px rgba(0, 0, 0, 0.678)
@@ -28,10 +33,31 @@ body {
 }
 
 #milho {
-    
+    position: absolute;
+    top: 40%;
+    left: 14%;
 }
 
 #milho img{
     width: 50px;
     height: auto;
+    position: absolute;
+}
+
+.animacao {
+    animation: swap 2s ease normal;
+}
+
+@keyframes swap {
+    0%   { transform: translate(0); }  
+   50%  { transform: translate(800px, -225px); }  
+   100% { transform: translate(800px, -225px); }
+}
+
+/* Janela de upgrades */
+
+.upgrades {
+    width: 500px;
+    height: 300px;
+    background-color: white;
 }

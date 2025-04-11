@@ -6,7 +6,7 @@ function criarInstancia() {
     milhoPeque.setAttribute('src', 'img/milho.png')
     milho.appendChild(milhoPeque)
     
-    //milhoPeque.classList.add(animacao)
+    milhoPeque.classList.add('animacao')
 
     return milhoPeque;
 }
