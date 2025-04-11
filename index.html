@@ -6,22 +6,27 @@
     <title>Document</title>
     <link rel="stylesheet" href="styles/style.css">
 </head>
+
 <body>
-    <p id="numClicks">Contagem de clicks</p>
-    <div id="click">
-        <img src="./img/corn.png" onclick="addElement()">
+    <p id="contagem">Contagem de clicks</p>
+
+    <div id="clickArea">
+        <img src="./img/corn.png" id="clicador" onclick="contar()">
     </div>
+
     <div id="display-plantation">
     <!-- TODO: ANIMAÇÃO DE MILHARAIS CRESCENDO EM PIXEL ART -->
     </div>
-    <div class="bar"><img src="./img/bar.png"></div>
-    <div id="milho"></div>
+
+    <div class="bar">
+        <img src="./img/bar.png">
+    </div>
 
     <div class="upgrades" id="upgrades">
-        
+    <!-- TODO: SISTEMA DE UPGRADES -->
     </div>
 
 
-<script src="./script.js"></script>
+    <script src="./js/clique.js"></script>
 </body>
 </html>

@@ -5,7 +5,8 @@ body {
     background-attachment: fixed;
 }
 
-#click {
+/* milho (clicador) */
+#clickArea {
     display: inline-block;
     position: absolute;
     top: 50%;
@@ -17,14 +18,16 @@ body {
     border: solid 2px rgba(0, 0, 0, 0.678)
 }
 
-#click img{
+#clickArea #clicador{
     height: 400px;
     width: auto;
 }
 
-#click img:active {
+#clickArea #clicador:active {
     transform: scale(1.1);
 }
+
+/* Barra */
 
 .bar {
     position: absolute;
@@ -32,20 +35,15 @@ body {
     right: 0;
 }
 
-#milho {
-    position: absolute;
-    top: 40%;
-    left: 14%;
-}
+/* Instâncias */
 
-#milho img{
+.instanciaMilho {
     width: 50px;
     height: auto;
-    position: absolute;
-}
-
-.animacao {
     animation: swap 2s ease normal;
+    position: absolute;
+    top: 40%;
+    left: 40%;
 }
 
 @keyframes swap {
@@ -57,6 +55,7 @@ body {
 /* Janela de upgrades */
 
 .upgrades {
+    display: none;
     width: 500px;
     height: 300px;
     background-color: white;
