@@ -1,7 +1,25 @@
-const numClicks = document.getElementById("contagem");
+const numMilho = document.getElementById("milho");
 const clicador = document.getElementById("clickArea");
 var cont = 0;
+var escalar = 1;
+var milho = 0;
 
+// MILHO
+function gerarMilhoJogador() {
+    milho = (escalar * cont);  
+}
+
+function contar() {
+    cont++
+    gerarMilhoJogador();
+
+    numMilho.innerHTML = `Milho: ${milho}`;
+
+    const instancia = criarInstancia();
+    destruirInstancia(instancia);
+}   
+
+// INSTANCIAS
 function criarInstancia() {
     var instance = document.createElement("img");
     instance.setAttribute('src', 'img/milho.png');
@@ -14,12 +32,6 @@ function criarInstancia() {
 function destruirInstancia(instancia) {
     setTimeout(() => {
         instancia.remove();
-    }, 2000);
+    }, 1500);
 }
 
-function contar() {
-    cont++;
-    numClicks.innerHTML = `Clicou ${cont} vezes`;
-    const instancia = criarInstancia();
-    destruirInstancia(instancia);
-}
