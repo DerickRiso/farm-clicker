@@ -1,12 +1,10 @@
 const numMilho = document.getElementById("milho");
 const clicador = document.getElementById("clickArea");
-var contagemMilho = 0;      // Variável que intermedia as operações com o milho do player
-var cont = 0;               // Contagem de clicks físicos
+var contagemMilho = 0;      // Variável que intermedia as operações com o milho
+var cont = 0;               // Contagem de clicks físicos (vou usar mais tarde)
 var clique = 1;             // Numero de milho por click
 var escalar = 1;            // Escalar pra multiplicar (power up)
 var milhoPlayer = 0;        // Quantidade atual de milho do jogador
-
-
 
 // MILHO
 function gerarMilhoJogador() {
@@ -47,6 +45,7 @@ function adicionarClique() {
     }
 }
 
+// Contagem
 function contar() {
     cont++;
     gerarMilhoJogador();
@@ -55,7 +54,4 @@ function contar() {
 
     const instancia = criarInstancia();
     destruirInstancia(instancia);
-} 
-
-
-
+}
