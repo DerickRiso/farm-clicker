@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <p id="milho">Milho: </p>
+    <p id="milho">Milho: 0</p>
 
     <div id="clickArea">
         <img src="./img/corn.png" id="clicador" onclick="contar()">
@@ -25,8 +25,8 @@
 
     <section class="upgrades" id="upgrades">
         <aside onclick="adicionarClique()"><p>Clique duplo</p></aside>
-        <aside></aside>
-        <aside></aside>
+        <aside onclick="bonusMilho()"><p>Explosão de milho</p></aside>
+        <aside onclick="autoclick()"><p>Autoclick</p></aside>
     </section>
 
     <script src="./js/clique.js"></script>
