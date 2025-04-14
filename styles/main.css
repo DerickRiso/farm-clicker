@@ -20,6 +20,7 @@ body {
 #clickArea #clicador{
     height: 400px;
     width: auto;
+    cursor: pointer;
 }
 
 #clickArea #clicador:active, .autoclick {

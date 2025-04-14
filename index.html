@@ -24,9 +24,36 @@
     </div>
 
     <section class="upgrades" id="upgrades">
-        <aside onclick="adicionarClique()"><p>Clique duplo</p></aside>
-        <aside onclick="bonusMilho()"><p>Explosão de milho</p></aside>
-        <aside onclick="autoclick()"><p>Autoclick</p></aside>
+        <article onclick="adicionarClique()">
+            <div>
+                <p id="valor1">100 milhos</p>
+            </div>
+            <aside>
+                <h3>+1 clique</h3>
+                <p>Um milho a mais por click</p>
+            </aside>
+        </article>
+
+        <article onclick="bonusMilho()">
+            <div>
+                <p id="valor2">800 milhos</p>
+            </div>
+            <aside>
+                <h3>Explosão de milho</h3>
+                <p>Ganha uma quantidade de milho de vez enquando</p>
+            </aside>
+        </article>
+
+        <article onclick="autoclick()">
+            <div>
+                <p id="valor3">5000 milhos</p>
+            </div>
+
+            <aside>
+                <h3>Autoclick</h3>
+                <p>Ganha um ajudante para clicar por você!</p>
+            </aside>
+        </article>
     </section>
 
     <script src="./js/clique.js"></script>

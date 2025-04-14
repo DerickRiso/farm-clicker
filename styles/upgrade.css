@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
+
+
 /* Janela de upgrades */
 .upgrades {
     position: absolute;
@@ -13,15 +16,34 @@
     background-color: white;
     border-radius: 25px;
     box-shadow: 10px 15px 10px rgba(0, 0, 0, 0.267);
+    font-family: 'Pixelify Sans';
 }
 
-.upgrades > aside {
+.upgrades > article {
+    display: flex;
+    flex-direction: column;
     height: 80px;
     width: 400px;
     background-color: rgb(255, 208, 79);
     border-radius: 10px;
+    cursor: pointer;
 
     &:active{
         transform: scale(1.01);
     }
+}
+
+.upgrades > article > div {
+    position: fixed;
+    margin-left: 20px;
+}
+
+.upgrades > article > aside {
+    text-align: center;
+    align-items: center;
+}
+
+h3 {
+    padding: 0px;
+    margin: 12px;
 }
