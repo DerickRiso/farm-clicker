@@ -18,7 +18,7 @@ function gerarMilhoJogador() {
 }
 
 function atualizar() {
-    numMilho.innerHTML = `Milho: ${milhoPlayer}`;
+    numMilho.innerHTML = `${milhoPlayer}`;
 }
 
 // INSTANCIAS

@@ -33,6 +33,27 @@
     }
 }
 
+.bar {
+    position: absolute;
+    top: 0px;
+    width: 800px;
+    height: 190px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    background-image: url(../img/placa.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.bar h2 {
+    font-family: 'Pixelify Sans';
+    text-align: center;
+    font-size: 3em;
+}
+    
+
+
 .upgrades > article > div {
     position: fixed;
     margin-left: 20px;
