@@ -46,6 +46,6 @@ body {
 
 @keyframes swap {
     0%   { transform: translate(0); }  
-   50%  { transform: translate(800px, -150px); opacity: 1; }  
-   100% { transform: translate(800px, -250px); opacity: 0}
+   50%  { transform: translate(850px, -130px); opacity: 1; }  
+   100% { transform: translate(850px, -250px); opacity: 0}
 }

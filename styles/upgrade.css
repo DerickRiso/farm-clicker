@@ -11,10 +11,11 @@
     justify-content: center;
     align-items: center;
     gap: 10px;
-    width: 500px;
-    height: 300px;
+    width: 470px;
+    height: 310px;
     background-color: white;
-    border-radius: 25px;
+    border-radius: 5px;
+    border: 3px solid black;
     box-shadow: 10px 15px 10px rgba(0, 0, 0, 0.267);
     font-family: 'Pixelify Sans';
 }
@@ -25,11 +26,16 @@
     height: 80px;
     width: 400px;
     background-color: rgb(255, 208, 79);
-    border-radius: 10px;
+    border: 3px solid rgb(0, 0, 0);
     cursor: pointer;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.212);
 
     &:active{
         transform: scale(1.01);
+    }
+
+    &:hover {
+        transform: scale(0.98);
     }
 }
 
@@ -44,6 +50,7 @@
     background-image: url(../img/placa.png);
     background-position: center;
     background-repeat: no-repeat;
+    z-index: -1;
 }
 
 .bar h2 {
