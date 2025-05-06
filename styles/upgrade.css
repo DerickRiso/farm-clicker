@@ -25,7 +25,7 @@
     flex-direction: column;
     height: 80px;
     width: 400px;
-    background-color: rgb(255, 208, 79);
+    background-color: #ffd04f;
     border: 3px solid rgb(0, 0, 0);
     cursor: pointer;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.212);
@@ -74,4 +74,40 @@
 h3 {
     padding: 0px;
     margin: 12px;
+}
+
+.hidden {
+    display: none;
+    z-index: -1;
+}
+
+.tela-negacao {
+    background-color: #ffd04f;
+    width: 300px;
+    height: 90px;
+    font-family: 'Pixelify Sans';
+    border: 4px solid black;
+    text-align: center;
+    animation: surgir 0.4s ease-in-out none;
+    padding-bottom: 10px;
+}
+
+.tela-negacao button {
+    font-family: 'Pixelify Sans';
+    padding: 7px 5px;
+    background-color: #ffe089;
+    cursor: pointer;
+}
+
+.tela-negacao button:hover {
+    transform: scale(110%);
+}
+
+.tremer {
+    animation: tremer 0.5s normal none;
+}
+
+@keyframes surgir {
+    0% {transform: translate(0px, -110px);}
+    100% {transform: translate(0px, 0px);}
 }

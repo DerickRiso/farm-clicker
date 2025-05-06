@@ -1,0 +1,14 @@
+{
+    "name": "corn_clicker",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "module": "CommonJS",
+    "scripts": {
+        "start": "node index.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC"
+}

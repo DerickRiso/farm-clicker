@@ -38,15 +38,22 @@ function destruirInstancia(instancia) {
 
 // UPGRADES E COMPRA
 function comprar(preco) {
-    milhoPlayer = milhoPlayer - preco;
+    if(milhoPlayer < preco) {
+        negarCompra();
+    } else {
+        milhoPlayer = milhoPlayer - preco;
+    }
+    
     atualizar();
 }
 
 // Adiciona e escala clicks
-let valorClique = 100;
+let valorClique = 15;
 function adicionarClique() {
+    
     if(milhoPlayer >= valorClique) {
         comprar(valorClique);
+
         clique++;
 
         var novoValor = aumentarPreco(valorClique);
@@ -58,9 +65,10 @@ function adicionarClique() {
 }
 
 // Adiciona e escala o bonus
-let valorBonus = 800;
-let bonus = 100;
+let valorBonus = 30;
+let bonus = 10;
 function bonusMilho() {
+    
     if(milhoPlayer >= valorBonus) {
         comprar(valorBonus);
         setInterval(() => {
@@ -75,9 +83,10 @@ function bonusMilho() {
 }
 
 // Adiciona e escala o autoclick
-let valorAutoclick = 5000;
+let valorAutoclick = 20;
 let vel = 2000;
 function autoclick() {
+    
     if(milhoPlayer >= valorAutoclick) {
         comprar(valorAutoclick);
         setInterval(()=> {
@@ -108,4 +117,17 @@ function contar() {
 
     const instancia = criarInstancia();
     destruirInstancia(instancia);
+}
+
+// Negar compra
+function negarCompra() {
+    const negacao = document.getElementById('tela-negacao');
+    const fechar = document.getElementById('fechar');
+    const body = document.querySelector('body');
+
+    negacao.classList.remove('hidden');
+    
+    fechar.addEventListener('click', function(){
+        negacao.classList.add('hidden');
+    })
 }
